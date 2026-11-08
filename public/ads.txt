@@ -1,0 +1,4 @@
+# Google AdSense Publisher Declaration for QuickResizer
+# Replace 'pub-XXXXXXXXXXXXXXXX' with your verified Google AdSense Publisher ID once approved.
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
