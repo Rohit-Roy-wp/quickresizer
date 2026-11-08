@@ -70,9 +70,12 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3 text-xs text-slate-600">
                   <Mail className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-slate-800 block text-sm">
-                      support@quickresizer.com
-                    </span>
+                    <a
+                      href="mailto:quickresizer.help@gmail.com"
+                      className="font-semibold text-slate-800 hover:text-blue-600 block text-sm transition-colors"
+                    >
+                      quickresizer.help@gmail.com
+                    </a>
                     <span className="text-slate-500 block mt-0.5">
                       General inquiries, preset suggestions &amp; feedback
                     </span>

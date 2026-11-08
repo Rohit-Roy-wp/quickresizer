@@ -132,7 +132,14 @@ export default function AboutPage() {
                 <Link href="/contact" className="text-blue-600 font-semibold underline">
                   Contact Page
                 </Link>{" "}
-                or email us directly at <strong>support@quickresizer.com</strong>.
+                or email us directly at{" "}
+                <a
+                  href="mailto:quickresizer.help@gmail.com"
+                  className="font-semibold text-blue-600 underline hover:text-blue-700"
+                >
+                  quickresizer.help@gmail.com
+                </a>
+                .
               </p>
             </section>
           </div>

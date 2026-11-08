@@ -128,7 +128,15 @@ export default function TermsOfServicePage() {
                 For questions or legal inquiries regarding these Terms of Service, please contact us at:
               </p>
               <div className="mt-3 bg-slate-50 border border-slate-200 rounded-lg p-3 text-xs">
-                <p><strong>Email:</strong> support@quickresizer.com</p>
+                <p>
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:quickresizer.help@gmail.com"
+                    className="text-blue-600 underline hover:text-blue-700"
+                  >
+                    quickresizer.help@gmail.com
+                  </a>
+                </p>
                 <p className="mt-1"><strong>Website:</strong> <Link href="/" className="text-blue-600 underline">https://quickresizer.com</Link></p>
               </div>
             </section>
