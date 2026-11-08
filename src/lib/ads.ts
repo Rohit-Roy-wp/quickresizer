@@ -11,5 +11,5 @@
 export const SHOW_ADS: boolean =
   process.env.NEXT_PUBLIC_SHOW_ADS !== undefined
     ? process.env.NEXT_PUBLIC_SHOW_ADS === "true"
-    : true; // <-- Toggle here: `true` to show ads, `false` to hide all ads
+    : false; // <-- Toggle here: `true` to show ads, `false` to hide all ads
 
