@@ -13,7 +13,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://quickresizer.com"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://quickresizer-zeta.vercel.app"
+  ),
   title: {
     default: "QuickResizer: Fast, Free & Exact KB Image Resizer",
     template: "%s | QuickResizer",

@@ -7,10 +7,13 @@ This document stores persistent context, key decisions, resolved issues, and dom
 ## 1. Project Identity & Context
 
 - **Repository:** QuickResizer (Image Resizer & Converter)
-- **Primary Domain:** TBD (custom domain, to be mapped after deployment)
-- **Local Workspace Path:** TBD (fill in your local path, for example `d:\Code\QuickResizer`)
-- **Core Technology Stack:** Next.js (App Router), TypeScript, Tailwind CSS, HTML5 Canvas API, `gray-matter` for blog MDX.
-- **Contact Email:** TBD (must be a working address; required for AdSense trust pages)
+- **Deployment URL:** `https://quickresizer-zeta.vercel.app` (custom domain `quickresizer.com` to be mapped when purchased)
+- **GitHub Remote:** `https://github.com/Rohit-Roy-wp/quickresizer.git` (`main` branch)
+- **Core Technology Stack:** Next.js (App Router), TypeScript, Tailwind CSS v4, HTML5 Canvas API, `gray-matter` for blog MDX, PostCSS.
+- **Contact Email:** `quickresizer.help@gmail.com`
+- **Contact Form Provider:** Web3Forms (Access Key: `8f6054f0-0f24-4340-aa63-d2caa79bdeaa`)
+- **Analytics:** `@vercel/analytics/react` (Cookie-less, GDPR-compliant Vercel Web Analytics)
+- **Ad Network:** Adsterra (Active Keys: `787fe558e3181cf817e1b3c33feb4c9c` for 160x600, `645aa366f646e155f809f377e5beb04b` for 728x90, `c6000286bc363e762928f7cf457fda3d` for 300x250)
 - **Audience:** Indian government-exam applicants (SSC, UPSC, IBPS, RRB), job seekers, students.
 
 ---

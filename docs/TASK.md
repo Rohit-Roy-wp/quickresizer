@@ -57,11 +57,17 @@ This document tracks engineering milestones, active work, and the product roadma
 
 ### Milestone 7: Analytics, Deployment & Launch
 - [x] Add GA4 with the allowed event list (no file names or image data).
-- [ ] Choose host (Vercel Pro, Cloudflare Pages, or Netlify) after checking commercial-use terms.
-- [ ] Push to GitHub (manually by owner), connect to host, map custom domain (`A` / `CNAME`).
-- [ ] Verify HTTPS and redirects.
+- [x] Add Vercel Web Analytics (`@vercel/analytics/react`) for privacy-friendly real-time telemetry.
+- [x] Fix Tailwind CSS v4 PostCSS compilation for production builds on Vercel (`@tailwindcss/postcss` + `postcss.config.mjs`).
+- [x] Choose host: Deployed on Vercel (`https://quickresizer-zeta.vercel.app`).
+- [x] Integrate Web3Forms serverless contact form hooked to `quickresizer.help@gmail.com`.
+- [x] Deploy live Adsterra banner scripts (160x600, 728x90, 300x250) with isolated sandboxed iframes.
+- [x] Mobile UX: Redesign Exam Preset selector to full-width touch-friendly dropdown with spec badges.
+- [x] Desktop UX: Compact in-content leaderboard banners (728x90) with zero-CLS.
+- [x] Push to GitHub repository (`Rohit-Roy-wp/quickresizer`).
+- [ ] Connect custom domain (`quickresizer.com`) when purchased.
 - [ ] Submit sitemap in Google Search Console.
-- [ ] Run Lighthouse (mobile) and fix issues to reach 90+ for Performance and SEO.
+- [ ] Run Lighthouse (mobile) and verify 95+ Performance and SEO scores.
 - [x] Run the DevTools Network check to confirm no image data leaves the device.
 - [ ] Apply for Google AdSense.
 

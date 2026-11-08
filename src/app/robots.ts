@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://quickresizer.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://quickresizer-zeta.vercel.app";
 
   return {
     rules: {

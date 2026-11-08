@@ -3,7 +3,7 @@ import { getAllPresets } from "@/lib/presets";
 import { getAllBlogPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://quickresizer.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://quickresizer-zeta.vercel.app";
   const now = new Date().toISOString();
 
   // 1. Static Core & Trust Pages

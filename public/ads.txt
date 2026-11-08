@@ -1,4 +1,5 @@
-# Google AdSense Publisher Declaration for QuickResizer
-# Replace 'pub-XXXXXXXXXXXXXXXX' with your verified Google AdSense Publisher ID once approved.
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# QuickResizer Ads Configuration
+# Adsterra does not require an ads.txt file for verification on subdomains.
+# Once Google AdSense is approved, uncomment and add the verified publisher declaration below:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
 

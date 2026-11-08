@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
 
 export function Footer() {
-  const currentYear = 2026;
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="mt-auto border-t border-slate-200 bg-white">

@@ -9,7 +9,7 @@ interface WebApplicationSchemaProps {
 export function WebApplicationJsonLd({
   name = "QuickResizer",
   description = "Free client-side image resizer and compressor to exact KB limits (20KB, 50KB, 100KB) and dimensions (cm, in, px).",
-  url = "https://quickresizer.com",
+  url = process.env.NEXT_PUBLIC_SITE_URL || "https://quickresizer-zeta.vercel.app",
 }: WebApplicationSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
