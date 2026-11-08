@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Preset } from "@/lib/types";
-import { ExternalLink, Check, Calendar } from "lucide-react";
+import { ExternalLink, Check, Calendar, ChevronDown } from "lucide-react";
 
 interface PresetSelectorProps {
   presets: Preset[];
@@ -18,31 +18,47 @@ export function PresetSelector({
   className = "",
 }: PresetSelectorProps) {
   return (
-    <div className={`w-full bg-slate-50/90 px-4 sm:px-6 py-2.5 border-b border-slate-200 ${className}`}>
+    <div className={`w-full bg-slate-50/90 px-3.5 sm:px-6 py-2.5 border-b border-slate-200 ${className}`}>
       {/* Mobile Dropdown (< 768px) */}
       <div className="block md:hidden">
-        <div className="flex items-center gap-2">
-          <label htmlFor="mobile-preset-select" className="text-xs font-semibold text-slate-700 shrink-0">
-            Exam Preset:
-          </label>
-          <select
-            id="mobile-preset-select"
-            value={selectedPreset?.slug || ""}
-            onChange={(e) => {
-              const found = presets.find((p) => p.slug === e.target.value);
-              if (found) onSelectPreset(found);
-            }}
-            className="flex-1 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs text-slate-800 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 shadow-xs"
-          >
-            <option value="" disabled>
-              Select preset format...
-            </option>
-            {presets.map((preset) => (
-              <option key={preset.slug} value={preset.slug}>
-                {preset.label} ({preset.width}×{preset.height} {preset.unit}, max {preset.maxKB} KB)
+        <div className="flex flex-col gap-1.5">
+          <div className="flex items-center justify-between">
+            <label
+              htmlFor="mobile-preset-select"
+              className="text-xs font-semibold text-slate-700 flex items-center gap-1.5"
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-blue-600 inline-block"></span>
+              <span>Exam Preset:</span>
+            </label>
+            {selectedPreset && (
+              <span className="text-[10px] font-medium text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
+                {selectedPreset.width}&times;{selectedPreset.height} {selectedPreset.unit} &bull; Max {selectedPreset.maxKB}KB
+              </span>
+            )}
+          </div>
+          <div className="relative">
+            <select
+              id="mobile-preset-select"
+              value={selectedPreset?.slug || ""}
+              onChange={(e) => {
+                const found = presets.find((p) => p.slug === e.target.value);
+                if (found) onSelectPreset(found);
+              }}
+              className="w-full appearance-none rounded-lg border border-slate-300 bg-white pl-3 pr-9 py-2 text-xs font-medium text-slate-800 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 shadow-2xs cursor-pointer"
+            >
+              <option value="" disabled>
+                Select exam preset (SSC, UPSC, IBPS...)...
               </option>
-            ))}
-          </select>
+              {presets.map((preset) => (
+                <option key={preset.slug} value={preset.slug}>
+                  {preset.label} ({preset.width}×{preset.height} {preset.unit}, {preset.maxKB} KB)
+                </option>
+              ))}
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400">
+              <ChevronDown className="h-4 w-4" />
+            </div>
+          </div>
         </div>
       </div>
 
