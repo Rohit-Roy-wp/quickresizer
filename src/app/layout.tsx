@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "CujcaDk-RkvuftzKsrgu-z5wXSvOdeLDMN94H03OGS0",
+  },
 };
 
 export default function RootLayout({
@@ -49,6 +52,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
       <head>
+        <meta
+          name="google-site-verification"
+          content="CujcaDk-RkvuftzKsrgu-z5wXSvOdeLDMN94H03OGS0"
+        />
         {gaId && (
           <>
             <Script
