@@ -158,7 +158,7 @@ export default async function PresetPage({ params }: PageProps) {
       </section>
 
       {/* In-Content Ad */}
-      <AdSlot id={`preset-${preset.slug}-middle`} variant="rectangle" />
+      <AdSlot id={`preset-${preset.slug}-middle`} variant="leaderboard" />
 
       {/* Comprehensive Official Instructions (300+ words unique content) */}
       <article className="my-12 max-w-[720px] mx-auto prose prose-slate">

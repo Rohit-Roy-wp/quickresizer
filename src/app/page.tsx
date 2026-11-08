@@ -85,7 +85,7 @@ export default function HomePage() {
           </section>
 
           {/* In-Content Ad below the tool */}
-          <AdSlot id="in-content-rectangle" variant="rectangle" />
+          <AdSlot id="in-content-banner" variant="leaderboard" />
 
           {/* Comprehensive SEO Content Section (800+ Words) */}
           <article className="my-14 max-w-[760px] mx-auto text-slate-700 leading-relaxed space-y-8">

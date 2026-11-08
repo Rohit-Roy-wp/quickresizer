@@ -187,7 +187,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
 
         {/* In-Article Ad */}
-        <AdSlot id={`blog-${post.slug}-bottom`} variant="rectangle" />
+        <AdSlot id={`blog-${post.slug}-bottom`} variant="leaderboard" />
       </article>
 
         {/* Back to Guides link */}

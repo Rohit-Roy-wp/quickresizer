@@ -98,7 +98,7 @@ export function SizePageTemplate({
           </section>
 
           {/* In-Content Ad */}
-          <AdSlot id={`size-${size}kb-middle`} variant="rectangle" />
+          <AdSlot id={`size-${size}kb-middle`} variant="leaderboard" />
 
           {/* In-Depth Guidance Article */}
           <article className="my-12 max-w-[760px] mx-auto text-sm text-slate-700 leading-relaxed space-y-6">

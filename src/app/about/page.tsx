@@ -121,7 +121,7 @@ export default function AboutPage() {
 
             {/* In-Content Ad */}
             <div className="not-prose my-6">
-              <AdSlot id="about-content-bottom" variant="rectangle" />
+              <AdSlot id="about-content-bottom" variant="leaderboard" />
             </div>
 
             {/* Contact & Support Link */}

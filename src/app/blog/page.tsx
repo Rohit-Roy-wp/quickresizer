@@ -105,7 +105,7 @@ export default function BlogIndexPage() {
           </div>
 
           {/* In-Content Ad */}
-          <AdSlot id="blog-index-bottom" variant="rectangle" />
+          <AdSlot id="blog-index-bottom" variant="leaderboard" />
         </div>
 
         {/* Right Vertical Skyscraper Ad */}
